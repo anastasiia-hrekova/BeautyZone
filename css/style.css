@@ -26,6 +26,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--color-primary-light);
 }
 
 /* Header */
@@ -164,9 +165,9 @@ button:hover {
 }
 
 .star-2 {
-    width: 40px;
-    height: 40px;
-    margin-right: -60px;
+  width: 40px;
+  height: 40px;
+  margin-right: -60px;
 }
 
 .ph-before {
@@ -178,23 +179,147 @@ button:hover {
 }
 
 .ph-after {
-    width: 335px;
-    height: 328px;
-    margin-top: -70px;
-    margin-right: 80px;
+  width: 335px;
+  height: 328px;
+  margin-top: -70px;
+  margin-right: 80px;
 }
 
-.star-1{
-    width: 64px;
-    height: 64px;
-    margin-right: 420px;
-    margin-top: -10px;
+.star-1 {
+  width: 64px;
+  height: 64px;
+  margin-right: 420px;
+  margin-top: -10px;
 }
 
-.star-3{
-    width: 16px;
-    height: 16px;
+.star-3 {
+  width: 16px;
+  height: 16px;
 }
+
+/* Rreferenses section */
+
+.preferenses-section {
+  width: 1060px;
+  height: 377px;
+  margin-left: 128px;
+  margin-bottom: 96px;
+  background-color: #2b7fff33;
+}
+
+.preferenses-section-title {
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74.05px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.preferenses-section-title .accent {
+  color: var(--color-brand);
+}
+
+.preferenses-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.preferenses-box-block {
+  width: 316px;
+  height: 181px;
+  border-radius: 32px 32px 32px 32px;
+  background-color: var(--color-primary-light);
+  text-align: center;
+  margin-right: 56px;
+}
+
+.preferenses-box p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.preferenses-box-photo {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+/* Procedures section */
+
+.procedures-section {
+  width: 1216px;
+  height: 621px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 128px;
+  margin-bottom: 96px;
+}
+
+.procedures-section-title {
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74.05px;
+  margin-bottom: 48px;
+  margin-left: -142px;
+}
+
+.procedures-section-title .accent {
+  color: var(--color-brand);
+}
+
+.procedures-section-list {
+  width: 1216px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.procedures-section-item {
+  margin-right: 16px;
+}
+
+.procedures-section-item p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: var(--color-primary-light);
+  margin-top: -87px;
+  margin-left: 34px;
+}
+
+/* Contacts section */
+
+.contacts-section{
+  width: 1059px;
+  height: 602px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 156px;
+  margin-bottom: 94px;
+}
+
+.contacts-section-title{
+  font-family: Play;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 74.05px;
+}
+
+.contacts-section-title .accent{
+  color: var(--color-brand);
+}
+
+.contacts-section-frame{
+  border-radius: 32px 32px 32px 32px;
+  border: 0;
+}
+
 
 
 /* Footer */
@@ -202,8 +327,58 @@ button:hover {
 footer {
   background-color: var(--color-brand-dark);
   height: 278px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: -100px;
 }
+
+
 
 .nav-link_footer {
   color: var(--color-primary-light);
+}
+
+.footer-logo{
+  width: 83px;
+  height: 42px;
+  margin-top: 56px;
+  margin-left: 100px;
+}
+
+.footer-list{
+  width: 203px;
+  height: 124px;
+  margin-top: -44px;
+  margin-left: 369px;
+}
+
+.nav-link_footer{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+
+.politecy{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    font-style: normal;
+    color: var(--color-primary-light);
+    margin-bottom: 16px;
+}
+
+.contacts-info{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    font-style: normal;
+    color: var(--color-primary-light);
+    margin-top: 56px;
+}
+
+.footer-image{
+  margin-top: 126px;
 }
