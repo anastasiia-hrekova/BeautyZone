@@ -12,10 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="conteiner">
       <nav>
-
-        <ul class="nav-list-header">
+       <ul class="nav-list-header">
           <li><a href="./index.html"><img class="header-logo" src="./images/logo.svg" alt="Logo Beauty Zone" /></a></li>
           <li><a class="header-list-item" href="#info-section">Про нас</a></li>
           <li><a class="header-list-item" href="#preferenses-section">Чому ми</a></li>
@@ -33,12 +32,14 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="conteiner">
       <section class="section-primary">
         <h2>Косметологічна клініка</h2>
         <img class="main-logo" src="./images/logo.svg" alt="Logo Beauty Zone" />
         <button type="button">Замовити дзвінок</button>
-        <p>Запишись та отримай безкоштовну </br> консультацію нашого косметолога</p>
+        <p>Запишись та отримай безкоштовну</p>
+        <p>консультацію нашого косметолога</p>
+    
       </section>
       <section class="section-info" id="info-section">
         <div class="section-info-text">
@@ -123,42 +124,44 @@
       </section>
     </main>
     <footer>
+      <div  class="conteiner">
       <nav class="nav-footer">
         <a href="#">
           <img class="footer-logo" src="./images/logo.svg" alt="Logo Beauty Zone" />
         </a>
-        <ul class="footer-list">
-          <li><a class="nav-link_footer" href="#info-section">Про нас</a></li>
-          <li><a class="nav-link_footer" href="#preferenses-section">Чому ми</a></li>
-          <li><a class="nav-link_footer" href="#procedures-section">Наші процедури</a></li>
-          <li><a class="nav-link_footer" href="#contacts-section">Контакти</a></li>
-        </ul>
+        <div class="footer-list">
+          <p><a class="nav-link_footer" href="#info-section">Про нас</a></p>
+          <p><a class="nav-link_footer" href="#preferenses-section">Чому ми</a></p>
+          <p><a class="nav-link_footer" href="#procedures-section">Наші процедури</a></p>
+          <p><a class="nav-link_footer" href="#contacts-section">Контакти</a></p>
+        </div>
       </nav>
       <address>
-        <ul class="contacts-info">
-          <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-          <li>
+        <div>
+          <p><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></p>
+          <p>
             <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="https://maps.app.goo.gl/Yqxrd3fRT3UKaFy5A" target="_blank">Україна, м. Київ, вул. Тараса Шевченка 5</a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="#"><img class="foot-social-icon" src="./images/telefone_footer.svg" alt="Call_footer"/></a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="#"><img class="foot-social-icon" src="./images/facebook_footer.svg" alt="Facebook_footer"/></a>
-          </li>
-          <li>
+          </p>
+          <p>
             <a href="#"><img class="foot-social-icon" src="./images/insta_footer.svg" alt="Insta_footer"/></a>
-          </li>
-          </ul>
-          <div class="politecy">
+          </p>
+        </div>
+       </address>
+        <div class="politecy">
           <a href="#">Політика конфіденційності</a>
           <p>&copy; 2022 Дані захищені</p>
-          </div>
-       </address>
+        </div>
       <img class="footer-image" src="./images/footer-image.png" alt="niz" />
+      </div>
     </footer>
   </body>
 </html>
