@@ -22,6 +22,7 @@ ul {
   flex-direction: row;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -39,44 +40,59 @@ a {
 
 /* Header */
 
-header {
-  height: 106px;
-  background-color: rgba(255, 255, 255, 0.5);
-
+header{
+  background-color: #FFFFFF40;
 }
 
 .header-logo {
   width: 74px;
   height: 42px;
-  margin-top: -10px;
-  margin-right: 150px;
 }
 
-.nav-list-header {
+.header-conteiner{
   display: flex;
   justify-content: space-between;
-  margin-top: 38px;
-  margin-right: 62px;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  gap: 20px;
 }
 
-.header-list-item {
+.header-nav{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+ }
+
+.header-menu{
+display: flex;
+flex-grow: 1;
+justify-content: center;
+gap: 56px;
+}
+
+.header-item {
   color: var(--color-brand-dark);
   font-size: 18px;
   font-weight: 400;
   line-height: 21.09px;
-  margin-right: 56px;
-  justify-content: center;
 }
 
-.nav-list-header :hover {
+
+.header-menu :hover {
   color: var(--color-brand);
 }
 
-.social-media-icon {
+.social-icons{
+display: flex;
+justify-content: flex-end;
+gap: 32px;
+}
+
+.social-icon {
   width: 32px;
   height: 32px;
-  margin-top: -8px;
-  margin-right: 32px;
 }
 
 /* Main */
@@ -135,9 +151,12 @@ button:hover {
 
 /* Section-info */
 
-.section-info {
-  height: 695px;
-  width: 1240px;
+.section-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+  align-items:center;
 }
 
 .section-info-title {
@@ -166,57 +185,25 @@ button:hover {
   font-weight: 700;
 }
 
-.section-info-photo {
+.info-photo {
+  width: 499px;
+  height: 695px;
   display: flex;
-  flex-direction: column;
   align-items: flex-end;
 }
 
-.star-2 {
-  width: 40px;
-  height: 40px;
-  margin-right: -60px;
-}
-
-.ph-before {
-  width: 335px;
-  height: 328px;
-  margin-top: -580px;
-  margin-bottom: 20px;
-  margin-right: 268px;
-}
-
-.ph-after {
-  width: 335px;
-  height: 328px;
-  margin-top: -70px;
-  margin-right: 80px;
-}
-
-.star-1 {
-  width: 64px;
-  height: 64px;
-  margin-right: 420px;
-  margin-top: -10px;
-}
-
-.star-3 {
-  width: 16px;
-  height: 16px;
-}
 
 /* Rreferenses section */
 
 .preferenses-section {
   width: 1060px;
-  height: 377px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 96px;
   background-color: #2b7fff33;
 }
 
-.preferenses-section-title {
+.preferenses-title {
   font-family: Play;
   font-size: 64px;
   font-weight: 700;
@@ -225,7 +212,7 @@ button:hover {
   margin-bottom: 48px;
 }
 
-.preferenses-section-title .accent {
+.preferenses-title .accent {
   color: var(--color-brand);
 }
 
@@ -236,7 +223,7 @@ button:hover {
   justify-content: space-between;
 }
 
-.preferenses-box-block {
+.preferenses-block {
   width: 316px;
   height: 181px;
   border-radius: 32px 32px 32px 32px;
@@ -250,7 +237,7 @@ button:hover {
   line-height: 24px;
 }
 
-.preferenses-box-photo {
+.preferenses-photo {
   margin-top: 20px;
   margin-bottom: -10px;
 }
@@ -259,13 +246,14 @@ button:hover {
 
 .procedures-section {
   width: 1216px;
-  height: 621px;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 96px;
 }
 
-.procedures-section-title {
+.procedures-title {
   font-family: Play;
   font-size: 64px;
   font-weight: 700;
@@ -274,23 +262,20 @@ button:hover {
   text-align: center;
 }
 
-.procedures-section-title .accent {
+.procedures-title .accent {
   color: var(--color-brand);
 }
 
-.procedures-section-list {
+.procedures-list {
   width: 1216px;
   height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  gap: 16px;
 }
 
-.procedures-section-item {
-  margin-right: 16px;
-}
-
-.procedures-section-item p {
+.procedures-item p {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -304,7 +289,6 @@ button:hover {
 
 .contacts-section{
   width: 1059px;
-  height: 602px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,28 +324,33 @@ footer {
 
 }
 
-footer .conteiner{
+ .footer-conteiner{
   display: flex;
     flex-direction: row;
     justify-content: space-between;
-    position: relative;
-}
+    gap: 186px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+} 
 
 .nav-link_footer {
   color: var(--color-primary-light);
 }
 
+.nav-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 186px;
+}
+
 .footer-logo{
   width: 83px;
   height: 42px;
-  margin-top: 56px;
+
 }
 
-.footer-list{
-  width: 203px;
-  height: 124px;
-  margin-top: -62px;
-  margin-left: 369px;
+.nav-footer p{
+  margin-top: 0;
 }
 
 .nav-link_footer{
@@ -377,8 +366,6 @@ footer .conteiner{
     text-align: left;
     font-style: normal;
     color: var(--color-primary-light);
-    margin-bottom: 16px;
-    margin-top: 56px;
 }
 
 .politecy p{
@@ -392,12 +379,18 @@ address{
     text-align: left;
     font-style: normal;
     color: var(--color-primary-light);
-    margin-top: 40px;
 }
 
-.footer-image{
-/* margin-top: 126px; */
-position: absolute;
-bottom:0;
-right: 0;
+address p{
+  margin-top: 0;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 24px;
+}
+
+.footer-social{
+  width: 42px;
+  height: 42px;
 }
