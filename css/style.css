@@ -214,6 +214,7 @@ button:hover {
   background-image: url(../images/star-bcg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 .preferenses-section {
