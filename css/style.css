@@ -101,6 +101,7 @@ header {
 
 .inst {
   fill: var(--color-brand-dark);
+  stroke: var(--color-brand-dark);
 }
 
 /* Main */
@@ -460,4 +461,5 @@ address p {
 
 .ic-inst {
   fill: var(--color-primary-light);
+  stroke: var(--color-primary-light);
 }
