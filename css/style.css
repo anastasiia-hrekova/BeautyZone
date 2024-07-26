@@ -38,6 +38,11 @@ a {
   padding-right: 15px;
 }
 
+svg path {
+  fill: inherit;
+  stroke: inherit;
+}
+
 /* Header */
 
 header {
@@ -91,9 +96,10 @@ header {
 }
 
 .social-icon {
-  width: 32px;
-  height: 32px;
+  fill: var(--color-brand-dark);
+  stroke: var(--color-brand-dark);
 }
+
 
 /* Main */
 
@@ -135,7 +141,7 @@ header {
   margin-bottom: 40px;
 }
 
-button {
+.main-btn {
   width: 219px;
   height: 53px;
   font-size: 16px;
@@ -149,7 +155,7 @@ button {
   transition: all 1s;
 }
 
-button:hover {
+.main-btn:hover {
   color: var(--color-primary-dark);
   background-color: transparent;
 }
@@ -318,6 +324,28 @@ button:hover {
   color: var(--color-primary-l);
 }
 
+/* Carousel */
+
+.carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-brand-dark);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  fill: var(--color-brand-dark);
+}
+
+.carousel-btn:hover {
+  background-color: var(--color-brand);
+  border: var(--color-primary-light);
+  fill: var(--color-primary-light);
+}
+
 /* Contacts section */
 
 .contacts-section {
@@ -424,7 +452,6 @@ address p {
   gap: 24px;
 }
 
-.footer-social {
-  width: 42px;
-  height: 42px;
+.footer-icon {
+  fill: var(--color-primary-light);
 }
