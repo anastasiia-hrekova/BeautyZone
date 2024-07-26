@@ -96,7 +96,7 @@ header {
 }
 
 .social-icon {
-  fill: var(--color-brand-dark);
+  /* fill: var(--color-brand-dark); */
   stroke: var(--color-brand-dark);
 }
 
@@ -453,5 +453,6 @@ address p {
 }
 
 .footer-icon {
-  fill: var(--color-primary-light);
+  /* fill: var(--color-primary-light); */
+  stroke: var(--color-primary-light);
 }
