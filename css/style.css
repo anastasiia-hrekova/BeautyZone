@@ -96,10 +96,12 @@ header {
 }
 
 .social-icon {
-  /* fill: var(--color-brand-dark); */
   stroke: var(--color-brand-dark);
 }
 
+.inst {
+  fill: var(--color-brand-dark);
+}
 
 /* Main */
 
@@ -321,7 +323,7 @@ header {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  color: var(--color-primary-l);
+  color: var(--color-primary-light);
 }
 
 /* Carousel */
@@ -453,6 +455,9 @@ address p {
 }
 
 .footer-icon {
-  /* fill: var(--color-primary-light); */
   stroke: var(--color-primary-light);
+}
+
+.ic-inst {
+  fill: var(--color-primary-light);
 }
