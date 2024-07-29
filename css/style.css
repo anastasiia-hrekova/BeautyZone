@@ -28,6 +28,7 @@ ul {
 a {
   text-decoration: none;
   color: var(--color-primary-light);
+
 }
 
 .conteiner {
@@ -96,12 +97,7 @@ header {
 }
 
 .social-icon {
-  stroke: var(--color-brand-dark);
-}
-
-.inst {
   fill: var(--color-brand-dark);
-  stroke: var(--color-brand-dark);
 }
 
 /* Main */
@@ -296,8 +292,15 @@ header {
   color: var(--color-brand);
 }
 
+.procedure-conteiner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
 .procedures-list {
-  width: 1216px;
+  /* width: 1216px; */
+  flex-basis: calc((100%-32px)/3);
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -330,6 +333,7 @@ header {
 /* Carousel */
 
 .carousel-btn {
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,9 +375,15 @@ header {
   color: var(--color-brand);
 }
 
-.contacts-section-frame {
+.contacts-map {
+  flex-shrink: 0;
   border-radius: 32px 32px 32px 32px;
   border: 0;
+}
+
+.contacts-conteiner {
+  display: flex;
+  gap: 32px;
 }
 
 
@@ -381,12 +391,26 @@ header {
 
 /* Footer */
 
-footer {
+.footer {
   background-image: url(../images/footer.png);
   background-color: var(--color-brand-dark);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  position: relative;
+}
+
+.footer::after {
+  position: absolute;
+  width: 246px;
+  height: 146px;
+  background-image: url(../images/footer-img.png);
+  background-repeat: no-repeat;
+  content: '';
+  right: 0;
+  bottom: 0;
 }
 
 .footer-conteiner {
@@ -394,8 +418,6 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   gap: 186px;
-  margin-top: 56px;
-  margin-bottom: 56px;
 }
 
 .nav-link_footer {
@@ -456,10 +478,43 @@ address p {
 }
 
 .footer-icon {
-  stroke: var(--color-primary-light);
+  fill: var(--color-primary-light);
 }
 
-.ic-inst {
-  fill: var(--color-primary-light);
-  stroke: var(--color-primary-light);
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(93, 119, 156, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+.modal {
+  position: relative;
+  width: 720px;
+  height: 680px;
+  background-color: var(--color-brand-dark);
+  background-image: url(../images/modal-back.png);
+  border-radius: 48px 48px 48px 48px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 16px;
+  height: 16px;
 }

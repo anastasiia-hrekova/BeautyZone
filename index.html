@@ -39,7 +39,7 @@
           </a>
           <a href="#">
             <svg class="social-icon" width="32px" height="32px">
-              <use class="inst" href="./images/icons.svg#icon-instagram"></use>
+              <use href="./images/icons.svg#icon-instargam"></use>
             </svg>
           </a>
         </div>
@@ -52,7 +52,7 @@
         <div class="primary">
           <h2>Косметологічна клініка</h2>
           <img class="main-logo" src="./images/logo.svg" alt="Logo Beauty Zone" />
-          <button class="main-btn" type="button">Замовити дзвінок</button>
+          <button class="main-btn  modal-btn-open" type="button">Замовити дзвінок</button>
           <p>Запишись та отримай безкоштовну<br>
             консультацію нашого косметолога</p>
         </div>
@@ -110,52 +110,57 @@
       <section class="procedures-section" id="procedures-section">
         <div class="conteiner">
           <h2 class="procedures-title">Наші <span class="accent">процедури</span></h2>
-          <button class="carousel-btn" type="button">
-            <svg class="carousel-icon" width="16px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="procedures-list">
-            <li>
-              <div class="procedures-item">
-                <p>Маска <br>для обличчя</p></a>
-              </div>
-            </li>
-            <li>
-              <div class="procedures-item">
-                <p>Ін'єкції краси</p></a>
-              </div>
-            </li>
-            <li>
-              <div class="procedures-item">
-                <p>Чистка обличчя</p></a>
-              </div>
-            </li>
-          </ul>
-          <button class="carousel-btn" type="button">
-            <svg class="carousel-icon" width="16px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+          <div class="procedure-conteiner">
+            <button class="carousel-btn" type="button">
+              <svg class="carousel-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="procedures-list">
+              <li>
+                <div class="procedures-item">
+                  <p>Маска <br>для обличчя</p></a>
+                </div>
+              </li>
+              <li>
+                <div class="procedures-item">
+                  <p>Ін'єкції краси</p></a>
+                </div>
+              </li>
+              <li>
+                <div class="procedures-item">
+                  <p>Чистка обличчя</p></a>
+                </div>
+              </li>
+            </ul>
+            <button class="carousel-btn" type="button">
+              <svg class="carousel-icon" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
     </div>
     <section class="contacts-section" id="contacts-section">
       <div class="conteiner">
         <h2 class="contacts-section-title">Як нас <span class="accent">знайти</span></h2>
-        <iframe class="contacts-section-frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1720375077819!5m2!1sru!2sua"
-          width="605" height="481" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="contacts-conteiner">
+          <div class="contacts-frame"></div>
+          <iframe class="contacts-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1720375077819!5m2!1sru!2sua"
+            width="605" height="481" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="conteiner">
       <div class="footer-conteiner">
         <nav class="nav-footer">
-          <a href="#">
-            <img class="footer-logo" src="./images/logo.svg" alt="Logo Beauty Zone" />
+          <a class="footer-logo" href="#">
+            <img  src="./images/logo.svg" alt="Logo Beauty Zone" />
           </a>
           <div class="footer-list">
             <p><a class="nav-link_footer" href="#info-section">Про нас</a></p>
@@ -186,7 +191,7 @@
             </a>
             <a href="#">
               <svg class="footer-icon" width="32px" height="32px">
-                <use class="ic-inst" href="./images/icons.svg#icon-instagram"></use>
+                <use href="./images/icons.svg#icon-instargam"></use>
               </svg>
             </a>
           </div>
@@ -196,6 +201,14 @@
           <p>&copy; 2022 Дані захищені</p>
         </div>
   </footer>
+  <div class="backdrop">
+    <div class="modal">
+      <button class="modal-btn-close" type="button"></button>
+      <!-- <button class="modal-btn-accept" type="button"></button> -->
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
