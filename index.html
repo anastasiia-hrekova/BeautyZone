@@ -141,17 +141,48 @@
           </div>
         </div>
       </section>
-    <section class="contacts-section" id="contacts-section">
-      <div class="conteiner">
-        <h2 class="contacts-section-title">Як нас <span class="accent">знайти</span></h2>
-        <div class="contacts-conteiner">
-          <div class="contacts-frame"></div>
-          <iframe class="contacts-map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1720375077819!5m2!1sru!2sua"
-            width="605" height="481" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+      <section class="contacts-section" id="contacts-section">
+        <div class="conteiner">
+          <h2 class="contacts-section-title">Як нас <span class="accent">знайти</span></h2>
+          <div class="contacts-conteiner">
+            <div class="contacts-frame"></div>
+            <iframe class="contacts-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0YPQuy4g0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60L4sIDUsINCR0YDQvtCy0LDRgNGLLCDQmtC40LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNzQwMA!5e0!3m2!1sru!2sua!4v1720375077819!5m2!1sru!2sua"
+              width="605" height="481" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="contacts-form">
+              <h3 class="form-title">Запишіться <span class="accent">безкоштовно</span> <br>та отримайте подарунок</h3>
+              <form name="contacts-form" autocapitalize="off" novalidate>
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-name"></label>
+                <input class="form-input" 
+                type="text" 
+                id="user-name" 
+                name="user-name"
+                placeholder="Ваше ім'я та прізвище">
+              </div>
+                <div class="form-field">
+                  <label class="form-label visualy-hidden" for="user-tel"></label>
+                <input class="form-input" 
+                type="tel" 
+                id="user-tel" 
+                name="user-tel"
+                placeholder="Ваш номер телефону">
+                </div>
+               <div class="form-field"> 
+                <label class="form-label visualy-hidden" for="user-email"></label>
+                <input class="form-input" 
+                type="email" 
+                id="user-email" 
+                name="user-email"
+                placeholder="Ваша електронна пошта">
+              </div>
+                <button class="modal-btn-sumbit main-btn" type="submit">Записатись безкоштовно</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a></p>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
     </section>
   </main>
@@ -160,7 +191,7 @@
       <div class="footer-conteiner">
         <nav class="nav-footer">
           <a class="footer-logo" href="#">
-            <img  src="./images/logo.svg" alt="Logo Beauty Zone" />
+            <img src="./images/logo.svg" alt="Logo Beauty Zone" />
           </a>
           <div class="footer-list">
             <p><a class="nav-link_footer" href="#info-section">Про нас</a></p>
@@ -204,7 +235,38 @@
   <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-btn-close" type="button"></button>
-      <!-- <button class="modal-btn-accept" type="button"></button> -->
+      <h2 class="modal-title">Замовити <br>дзвінок</h2>
+      <h3 class="modal-text">Запишіться <span class="accent">безкоштовно</span>
+        <br>та отримайте подарунок
+      </h3>
+      <form name="modal-form" autocapitalize="off" novalidate>
+        <div class="form-field">
+          <label class="form-label visualy-hidden" for="user-name"></label>
+        <input class="form-input" 
+        type="text" 
+        id="user-name" 
+        name="user-name"
+        placeholder="Ваше ім'я та прізвище">
+      </div>
+        <div class="form-field">
+          <label class="form-label visualy-hidden" for="user-tel"></label>
+        <input class="form-input" 
+        type="tel" 
+        id="user-tel" 
+        name="user-tel"
+        placeholder="Ваш номер телефону">
+        </div>
+       <div class="form-field"> 
+        <label class="form-label visualy-hidden" for="user-email"></label>
+        <input class="form-input" 
+        type="email" 
+        id="user-email" 
+        name="user-email"
+        placeholder="Ваша електронна пошта">
+      </div>
+        <button class="modal-btn-sumbit main-btn" type="submit">Записатись безкоштовно</button>
+        <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a></p>
+      </form>
     </div>
   </div>
 
