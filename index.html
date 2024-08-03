@@ -47,7 +47,7 @@
     </div>
   </header>
   <main>
-    <section class="section-primary gradient">
+    <section class="section-primary">
       <div class="conteiner">
         <div class="primary">
           <h2>Косметологічна клініка</h2>
@@ -152,14 +152,15 @@
             </iframe>
             <div class="contacts-form">
               <h3 class="form-title">Запишіться <span class="accent">безкоштовно</span> <br>та отримайте подарунок</h3>
-              <form name="contacts-form" autocapitalize="off" novalidate>
+              <form name="contacts-form" autocapitalize="off">
                 <div class="form-field">
                   <label class="form-label visualy-hidden" for="user-name"></label>
                 <input class="form-input" 
                 type="text" 
                 id="user-name" 
                 name="user-name"
-                placeholder="Ваше ім'я та прізвище">
+                placeholder="Ваше ім'я та прізвище"
+                required>
               </div>
                 <div class="form-field">
                   <label class="form-label visualy-hidden" for="user-tel"></label>
@@ -167,7 +168,9 @@
                 type="tel" 
                 id="user-tel" 
                 name="user-tel"
-                placeholder="Ваш номер телефону">
+                placeholder="Ваш номер телефону"
+                pattern="^/+[0-9]{12}"
+                required>
                 </div>
                <div class="form-field"> 
                 <label class="form-label visualy-hidden" for="user-email"></label>
@@ -175,7 +178,9 @@
                 type="email" 
                 id="user-email" 
                 name="user-email"
-                placeholder="Ваша електронна пошта">
+                placeholder="Ваша електронна пошта"
+                pattern="^[A-Za-z0-9][A-Za-z0-9\.-_]*[A-Za-z0-9]*@([A-Za-z0-9]+([A-Za-z0-9-]*[A-Za-z0-9]+)*\.)+[A-Za-z]*$"
+                required>
               </div>
                 <button class="modal-btn-sumbit main-btn" type="submit">Записатись безкоштовно</button>
                 <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a></p>
@@ -239,14 +244,15 @@
       <h3 class="modal-text">Запишіться <span class="accent">безкоштовно</span>
         <br>та отримайте подарунок
       </h3>
-      <form name="modal-form" autocapitalize="off" novalidate>
+      <form name="modal-form" autocapitalize="off">
         <div class="form-field">
           <label class="form-label visualy-hidden" for="user-name"></label>
         <input class="form-input" 
         type="text" 
         id="user-name" 
         name="user-name"
-        placeholder="Ваше ім'я та прізвище">
+        placeholder="Ваше ім'я та прізвище"
+        required>
       </div>
         <div class="form-field">
           <label class="form-label visualy-hidden" for="user-tel"></label>
@@ -254,7 +260,9 @@
         type="tel" 
         id="user-tel" 
         name="user-tel"
-        placeholder="Ваш номер телефону">
+        placeholder="Ваш номер телефону"
+        pattern="^\+[0-9]{12}"
+        required>
         </div>
        <div class="form-field"> 
         <label class="form-label visualy-hidden" for="user-email"></label>
@@ -262,7 +270,9 @@
         type="email" 
         id="user-email" 
         name="user-email"
-        placeholder="Ваша електронна пошта">
+        placeholder="Ваша електронна пошта"
+        pattern="^[A-Za-z0-9][A-Za-z0-9\.-\_]*[A-Za-z0-9]*@([A-Za-z0-9]+([A-Za-z0-9-]*[A-Za-z0-9]+)*\.)+[A-Za-z]*$"
+        required>
       </div>
         <button class="modal-btn-sumbit main-btn" type="submit">Записатись безкоштовно</button>
         <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms-link" href="#">з політикою конфіденційності</a></p>

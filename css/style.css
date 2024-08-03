@@ -124,8 +124,9 @@ header {
   background-image: url(../images/bg_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right ;
-  padding-top: 116px;
+  background-position: center bottom ;
+ padding-top: 116px;
+ padding-bottom: 120px;
 }
 
 .primary {
@@ -227,12 +228,12 @@ header {
 
 /* Rreferenses section */
 
-.center-backgound {
+ .center-backgound {
   background-image: url(../images/star-bcg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-}
+} 
 
 .preferenses-section {
   margin-left: auto;
@@ -408,6 +409,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+width: 100%;
 max-width: 422px;
 max-height: 482px;
 border-radius: 32px 32px 32px 32px;
@@ -630,8 +632,11 @@ font-size: 13px;
 font-weight: 400;
 line-height: 15.23px;
 text-align: left;
-
 }
+
+/* .modal-btn-close{
+  background-image: url(../images/modal-btn-close.png);
+} */
 
 .modal-btn-sumbit{
   width: 100%;
@@ -639,6 +644,10 @@ text-align: left;
   display: block;
   margin: 0 auto;
   margin-bottom: 8px; 
+}
+
+.modal-btn-sumbit:hover{
+  color: var(--color-primary-light);
 }
 
 .form-terms{
