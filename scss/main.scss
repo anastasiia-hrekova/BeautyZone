@@ -1,0 +1,33 @@
+
+@import './utils/variables';
+@import './base';
+@import './utils/utils';
+
+
+@import './components/buttons';
+@import './components/contacts-section';
+@import './components/footer';
+@import './components/form';
+@import './components/header';
+@import './components/modal';
+@import './components/preferenses-section';
+@import './components/procedures-section';
+@import './components/section-info';
+@import './components/section-primary';
+
+
+
+
+.conteiner {
+    max-width: 1270px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+svg path {
+    fill: inherit;
+    stroke: inherit;
+}
+
