@@ -4,9 +4,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
-}
 
-.contacts-section-title {
+&__title {
     font-family: Play;
     font-size: 64px;
     font-weight: 700;
@@ -14,17 +13,20 @@
     text-align: center;
 }
 
-.contacts-section-title .accent {
-    color: var(--color-brand);
+&__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 }
 
-.contacts-map {
+&__map {
     flex-shrink: 0;
     border-radius: 32px 32px 32px 32px;
     border: 0;
 }
 
-.contacts-form {
+&__form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +40,9 @@
     padding-bottom: 48px;
 }
 
+}
+
+
 .form-title {
     font-size: 22px;
     font-weight: 600;
@@ -46,13 +51,6 @@
     color: var(--color-primary-light);
 }
 
-.form-title .accent {
-    color: var(--color-brand);
-}
 
 
-.contacts-conteiner {
-    display: flex;
-    gap: 32px;
-}
 

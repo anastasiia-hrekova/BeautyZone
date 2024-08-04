@@ -3,9 +3,8 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
-}
 
-.form-input {
+&__input {
     padding: 18px 32px;
     width: 100%;
     max-width: 310px;
@@ -17,12 +16,13 @@
     line-height: 15.23px;
 }
 
-.form-input:focus {
+
+&__input:focus {
     background-color: var(--color-modal);
     outline: none;
 }
 
-.form-input::placeholder {
+&__input::placeholder {
     color: var(--color-primary-light);
     font-size: 13px;
     font-weight: 400;
@@ -30,12 +30,9 @@
     text-align: left;
 }
 
-/* .modal-btn-close{
-    background-image: url(../images/modal-btn-close.png);
-  } */
+}
 
-
-.form-terms {
+.contacts-form__text{
     margin: 0 auto;
     max-width: 220px;
     font-size: 12px;
@@ -43,9 +40,9 @@
     line-height: 18px;
     text-align: center;
     color: var(--color-modal);
-}
 
-.form-terms-link {
+&_link{
     color: var(--color-modal);
     text-decoration: underline;
+}
 }

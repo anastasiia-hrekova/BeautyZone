@@ -1,24 +1,29 @@
 
 @import './utils/variables';
 @import './base';
+@import'./utils/texts';
 @import './utils/utils';
+
 
 
 @import './components/buttons';
 @import './components/carousel-btn';
+@import './components/center-background';
 @import './components/container';
 @import './components/svg';
 
 
+@import './layouts/asset-section';
 @import './layouts/contacts-section';
 @import './layouts/footer';
 @import './layouts/form';
 @import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/info-section';
 @import './layouts/modal';
-@import './layouts/preferenses-section';
-@import './layouts/procedures-section';
-@import './layouts/section-info';
-@import './layouts/section-primary';
+@import './layouts/service-section';
+
+
 
 
 
