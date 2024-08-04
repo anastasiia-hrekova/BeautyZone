@@ -5,52 +5,62 @@
     margin-right: auto;
     margin-bottom: 94px;
 
-&__title {
-    font-family: Play;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 74.05px;
-    text-align: center;
+    &__title {
+        font-family: Play;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 74.05px;
+        text-align: center;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    &__map {
+        flex-shrink: 0;
+        border-radius: 32px 32px 32px 32px;
+        border: 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 422px;
+        max-height: 482px;
+        border-radius: 32px 32px 32px 32px;
+        background-color: var(--color-brand-dark);
+        background-image: url(../images/modal-back.png);
+        padding-bottom: 48px;
+
+        &-title {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 25.78px;
+            text-align: center;
+            color: var(--color-primary-light);
+        }
+
+        &-text{
+            margin: 0 auto;
+            max-width: 220px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            color: var(--color-modal);
+        
+        &_link{
+            color: var(--color-modal);
+            text-decoration: underline;
+        }
+        }
+    }
+
 }
-
-&__block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-}
-
-&__map {
-    flex-shrink: 0;
-    border-radius: 32px 32px 32px 32px;
-    border: 0;
-}
-
-&__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 422px;
-    max-height: 482px;
-    border-radius: 32px 32px 32px 32px;
-    background-color: var(--color-brand-dark);
-    background-image: url(../images/modal-back.png);
-    padding-bottom: 48px;
-}
-
-}
-
-
-.form-title {
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 25.78px;
-    text-align: center;
-    color: var(--color-primary-light);
-}
-
-
-
-

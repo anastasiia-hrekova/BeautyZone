@@ -12,14 +12,16 @@
     cursor: pointer;
     fill: var(--color-brand-dark);
     transition: background-color 0.3s, border 0.3s, fill 0.3s;
-}
 
-.carousel-btn:hover {
-    background-color: var(--color-brand);
-    border: var(--color-primary-light);
-    fill: var(--color-primary-light);
-}
-
-.carousel-btn.next {
+    &:hover {
+        background-color: var(--color-brand);
+        border: var(--color-primary-light);
+        fill: var(--color-primary-light);
+    }
+    
+    &.next {
     transform: rotate(180deg);
 }
+}
+
+
