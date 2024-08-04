@@ -1,8 +1,6 @@
 .carousel-btn {
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
     padding: 0;
     width: 44px;
     height: 44px;

@@ -23,10 +23,7 @@
 
     &_link {
         color: var(--color-primary-light);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 18.75px;
-
+        @include text(16px, 400, 18.75px);
     }
     
 }
@@ -56,18 +53,14 @@
 }
 
 &__address {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
+    @include text(16px, 400, 18.75px);
     text-align: left;
     font-style: normal;
     color: var(--color-primary-light);
 }
 
 &__politecy {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.75px;
+    @include text(16px, 400, 18.75px);
     text-align: left;
     font-style: normal;
     color: var(--color-primary-light);
