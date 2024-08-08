@@ -1,7 +1,6 @@
 .button {
     @include text(16px, 600, 21.09px);
-    width: 219px;
-    height: 53px;
+    @include size(219px, 53px);
     font-family: Roboto, sans-serif;
     border-radius: 32px 32px 32px 32px;
     border: 2px solid var(--color-brand);
@@ -36,8 +35,7 @@
         
      
         &__img{
-            width: 16px;
-            height: 16px;  
+            @include size(16px, 16px); 
         }
     
         &__img:hover{
@@ -46,3 +44,4 @@
         }
     }
 }
+

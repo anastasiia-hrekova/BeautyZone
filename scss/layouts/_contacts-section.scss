@@ -1,5 +1,5 @@
 .contacts-section {
-    display: flex;
+    @include center;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
@@ -14,6 +14,10 @@
     &__block {
        @include center;
         gap: 32px;
+
+        @media  screen and (max-width: 1200px) {
+            margin-left: -100px;            
+        }
     }
 
     &__map {
@@ -24,8 +28,8 @@
 
     &__form {
         @include center;
-        flex-direction: column;
         width: 100%;
+        flex-direction: column;
         max-width: 422px;
         max-height: 482px;
         border-radius: 32px 32px 32px 32px;

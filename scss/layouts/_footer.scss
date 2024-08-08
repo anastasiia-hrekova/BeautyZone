@@ -7,12 +7,17 @@
     padding-top: 56px;
     padding-bottom: 56px;
     position: relative;
+    @include center;
     
     &__block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 186px;
+
+    @media  screen and (max-width: 1200px) {
+        gap: 136px;           
+    }
 }
 
 &__nav {
@@ -29,9 +34,7 @@
 }
 
 &__logo {
-    width: 83px;
-    height: 42px;
-
+    @include size(83px, 42px);
 }
 
 &__text {
@@ -57,6 +60,10 @@
     text-align: left;
     font-style: normal;
     color: var(--color-primary-light);
+
+    &-text {
+        margin-top: 0;
+    }
 }
 
 &__politecy {
@@ -64,14 +71,15 @@
     text-align: left;
     font-style: normal;
     color: var(--color-primary-light);
+
+    &-text {
+        color: #747272;
+    }
 }
 
-}
-
-.footer::after {
+&::after {
     position: absolute;
-    width: 246px;
-    height: 146px;
+    @include size(246px, 146px);
     background-image: url(../images/footer-img.png);
     background-repeat: no-repeat;
     content: '';
@@ -79,13 +87,8 @@
     bottom: 0;
 }
 
-.address-text {
-    margin-top: 0;
 }
 
-.politecy-text {
-    color: #747272;
-}
 
 .links-text{
     margin-top: 0;

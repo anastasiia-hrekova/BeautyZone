@@ -26,6 +26,11 @@
             <li><a class="header__link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
+        <button class="header__burger" type="button">
+          <svg class="header__burger-svg" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <div class="header__icons">
           <a href="tel:+380960000007">
             <svg class="header__icons header__svg" width="32px" height="32px">
@@ -42,6 +47,7 @@
               <use href="./images/icons.svg#icon-instargam"></use>
             </svg>
           </a>
+         
         </div>
       </div>
     </div>
@@ -52,16 +58,17 @@
         <div class="hero-section__block">
           <h2 class="hero-section__title">Косметологічна клініка</h2>
           <img class="hero-section__logo" src="./images/logo.svg" alt="Logo Beauty Zone" />
-          <button class="button  button-open" type="button">Замовити дзвінок</button>
+          <h1 class="hero-section__logo-text">Beauty Zone</h1>
+          <button class="hero-section__block-button button  button-open" type="button">Замовити дзвінок</button>
           <p class="hero-section__text">Запишись та отримай безкоштовну<br>
             консультацію нашого косметолога</p>
         </div>
       </div>
     </section>
     <div class="center-backgound">
-      <section id="info-section">
+      <section class="info-section" id="info-section">
         <div class="container">
-          <div class="info-section">
+          <div class="info-section__block">
             <div>
               <h2 class="info-section__title">Перевтілюйтесь <br> в <span class="text-brand">Beauty Zone!</span></h2>
               <p  class="info-section__text">
@@ -221,11 +228,11 @@
           </div>
         </nav>
         <address class="footer__address">
-          <p class="footer__text address-text"><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></p>
-          <p class="footer__text  address-text">
+          <p class="footer__text footer__address-text"><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></p>
+          <p class="footer__text  footer__address-text">
             <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
           </p>
-          <p class="footer__text  address-text">
+          <p class="footer__text  footer__address-text">
             <a href="https://maps.app.goo.gl/Yqxrd3fRT3UKaFy5A" target="_blank">Україна, м. Київ, вул. Тараса Шевченка
               5</a>
           </p>
@@ -249,7 +256,7 @@
         </address>
         <div class="footer__politecy">
           <a href="#">Політика конфіденційності</a>
-          <p class="politecy-text">&copy; 2022 Дані захищені</p>
+          <p class="footer__politecy-text">&copy; 2022 Дані захищені</p>
         </div>
   </footer>
   <div class="backdrop backdrop_is-hidden">

@@ -1,10 +1,20 @@
 .info-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 32px;
-    align-items: center;
+    @include center;
+    width: 100%;
     margin-bottom: 176px;
+
+    @media screen and (max-width:1200px) {
+        margin-bottom: 86px;
+        
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 32px;
+    }
 
     &__title {
         font-family: 'Play', sans-serif;
@@ -16,15 +26,27 @@
 
     &__text {
         @include text(20px, 400, 38px);
+        flex-grow: 1;
+        max-width: 709px;
+        max-height: 456px;
         text-align: left;
-        width: 709px;
+
+        @media  screen and (max-width:1200px) {
+            @include text(18px, 400, 32px);
+        }
     }
 
     &__image {
-        width: 499px;
-        height: 695px;
+        @include size(100%, 100%);
+        flex-grow: 1;
+       max-width: 499px; 
+       max-height: 695px;
         display: flex;
         align-items: flex-end;
+
+        @media  screen and (max-width:1200px) {
+            max-width: 439px;
+        }
     }
 }
 
