@@ -14,13 +14,10 @@
     &__block {
        @include center;
         gap: 32px;
-
-        @media  screen and (max-width: 1200px) {
-            margin-left: -100px;            
-        }
     }
 
     &__map {
+        flex-grow: 1;
         flex-shrink: 0;
         border-radius: 32px 32px 32px 32px;
         border: 0;
@@ -29,6 +26,7 @@
     &__form {
         @include center;
         width: 100%;
+        flex-grow: 1;
         flex-direction: column;
         max-width: 422px;
         max-height: 482px;

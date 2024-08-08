@@ -18,19 +18,16 @@
     &__block {
         @include center;
         gap: 16px;
-
-        @media  screen and (max-width: 1200px) {
-            margin-left: -100px;            
-        }
         
     }
 
     &__list {
-        flex-basis: calc((100% - 32px)/3);
+        flex-basis: calc((100% - 96px) / 3);
         max-height: 500px;
         @include center;
         flex-direction: row;
         gap: 16px;
+
     }
 
     &__item {
@@ -41,6 +38,10 @@
         justify-content: center;
         align-items: end;
         transition: transform 0.3s;
+
+        @media screen and (max-width: 1200px) {
+           @include size(288px, 400px); 
+        }
 
     }
 
