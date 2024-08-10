@@ -1,10 +1,15 @@
 .container {
-    width: 1270px;
+    width: 480px;
     margin: 0 auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px; 
 
-    @media  screen and (max-width: 1200px) {
-        max-width: 1030px;          
+    @media  screen and (min-width: $bp-tablet) {
+        width: 780px;  
     }
+
+    @media  screen and (min-width: $bp-desktop) {
+        width: 1240px;  
+    }
+
 }

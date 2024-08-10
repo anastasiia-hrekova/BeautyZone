@@ -26,11 +26,16 @@
             <li><a class="header__link" href="#contacts-section">Контакти</a></li>
           </ul>
         </nav>
-        <button class="header__burger" type="button">
+        <button class="header__burger  menu-btn-open" type="button">
           <svg class="header__burger-svg" width="24px" height="24px">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
+
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+         </div>
+
         <div class="header__icons">
           <a href="tel:+380960000007">
             <svg class="header__icons header__svg" width="32px" height="32px">
@@ -46,8 +51,7 @@
             <svg class="header__icons header__svg" width="32px" height="32px">
               <use href="./images/icons.svg#icon-instargam"></use>
             </svg>
-          </a>
-         
+          </a>        
         </div>
       </div>
     </div>
@@ -85,7 +89,7 @@
           </div>
         </div>
       </section>
-      <section class="asset-section" id="asset-section">
+      <!-- <section class="asset-section" id="asset-section">
         <div class="container">
           <h2 class="asset-section__title">
             Чому люди <br />
@@ -113,8 +117,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="service-section" id="service-section">
+      </section> -->
+      <!-- <section class="service-section" id="service-section">
           <h2 class="service-section__title">Наші <span class="text-brand">процедури</span></h2>
           <div class="container">
           <div class="service-section__block">
@@ -162,8 +166,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contacts-section" id="contacts-section">
+      </section> -->
+      <!-- <section class="contacts-section" id="contacts-section">
         <div class="container">
           <h2 class="contacts-section__title">Як нас <span class="text-brand">знайти</span></h2>
           <div class="contacts-section__block">
@@ -209,11 +213,11 @@
               </form>
             </div>
           </div>
-        </div>
+        </div> -->
     </div>
     </section>
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__block">
         <nav class="footer__nav">
@@ -258,7 +262,7 @@
           <a href="#">Політика конфіденційності</a>
           <p class="footer__politecy-text">&copy; 2022 Дані захищені</p>
         </div>
-  </footer>
+  </footer> -->
   <div class="backdrop backdrop_is-hidden">
     <div class="modal">
       <button class="button-close" type="button">
@@ -304,7 +308,9 @@
     </div>
   </div>
 
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
+  
 </body>
 
 </html>

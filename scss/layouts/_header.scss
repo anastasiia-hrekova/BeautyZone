@@ -1,18 +1,26 @@
 .header {
     @include center;
     width: 100%;
-    background-color: #FFFFFF40;
     position: absolute;
     top: 0;
     left: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+        background-color: #FFFFFF40;
+    }
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         gap: 20px;
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
     }
 
     &__nav {
@@ -23,13 +31,13 @@
     }
 
     &__menu {
-        display: flex;
-        flex-grow: 1;
-        justify-content: center;
-        gap: 56px;
+        display: none;
 
-        @media screen and (max-width: 1200px) {
-            display: none;
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            gap: 56px;
         }
     }
 
@@ -47,12 +55,12 @@
     }
 
     &__icons {
-        display: flex;
-        justify-content: flex-end;
-        gap: 32px;
+        display: none;
 
-        @media screen and (max-width: 1200px) {
-            display: none;
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            justify-content: flex-end;
+            gap: 32px;
         }
     }
 
@@ -66,21 +74,17 @@
     }
 
     &__burger {
-        display: none;
-
-        &-svg {
-            fill: var(--color-primary-light);
-        }
-
-        &-svg:hover {
+            background: none;
+        border-style: none;
+        fill: var(--color-primary-light);
+        
+        &:hover {
             transform: scale(1.2);
             transition: 0.3s;
         }
 
-        @media screen and (max-width: 1200px) {
-            display: block;
-            background: none;
-            border-style: none;            
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
         }
     }
 }

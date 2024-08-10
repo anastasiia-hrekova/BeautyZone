@@ -3,72 +3,78 @@
     background-image: url(../images/bg_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
-    padding-top: 116px;
+    background-position: -320px bottom;
+    padding-top: 71px;
     padding-bottom: 120px;
 
-    @media screen and (max-width: 1200px) {
-        background-position: center bottom;
+    @media screen and (min-width: $bp-tablet) {
+            background-position: center bottom;
+            padding-top: 116px;
+    padding-bottom: 120px;
     }
 
     &__block {
         display: flex;
         flex-direction: column;
-        max-width: 529px;
-        margin-bottom: 126px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        margin-left: 106px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 56px;
 
-        @media screen and (max-width: 1200px) {
-            max-width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 86px;
+        @media screen and (min-width: $bp-tablet) {
+            width: 530px;
+            margin-bottom: 126px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            margin-left: 80px;
         }
 
         &-button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
 
-            @media screen and (max-width: 1200px) {
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 8px;
+            @media screen and (min-width: $bp-tablet) {
+                margin: 0;
             }
+
         }
     }
 
     &__title {
         @include text(18px, 400, 21.09px);
         color: var(--color-brand-dark);
-        margin-bottom: 16px;
+        text-align: center;
+        margin-bottom: 0;
 
-        @media screen and (max-width: 1200px) {
-            text-align: center;
-            margin-bottom: 0;
+        @media screen and (min-width: $bp-tablet) {
+            text-align: left;
+            margin-bottom: 16px;
         }
     }
 
     &__logo {
-        max-width: 529px;
-        max-height: 228px;
-        margin-left: -45px;
-        margin-bottom: 40px;
+        display: none;
 
-        @media screen and (max-width: 1200px) {
-            display: none;
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            max-width: 529px;
+            max-height: 228px;
+            margin-bottom: 40px;
+            margin-left: -46px;
         }
 
         &-text {
-            display: none;
-            font-family: Play;
-            @include text(54px, 700, 46px);
+            display: inline;
+            @include text(72px, 700, 64px);
             text-align: center;
+            font-family: Play;
             color: var(--color-brand);
+            margin-top: 0;
+            margin-bottom: 32px;
 
-            @media screen and (max-width: 1200px) {
-                display: inline;
-                font-size: 120px;
-                margin-top: 32px;
+            @media screen and (min-width: $bp-tablet) {
+                display: none;
             }
         }
     }
@@ -76,11 +82,12 @@
     &__text {
         height: 36px;
         @include text(12px, 400, 18px);
-        margin-left: 10px;
+        text-align: center;
 
-        @media screen and (max-width: 1200px) {
-          text-align: center;
-         }
+        @media screen and (min-width: $bp-tablet) {
+            text-align: left;
+            margin-left: 10px;
+        }
     }
 
 
