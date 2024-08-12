@@ -1,9 +1,10 @@
 .info-section {
     @include center;
     width: 100%;
+    margin-bottom: 104px;
     
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desktop) {
         margin-bottom: 176px;
         
     }
@@ -17,35 +18,47 @@
     }
 
     &__title {
-        font-family: 'Play', sans-serif;
-        @include text(64px, 700, 74.05px);
+        font-family: 'Roboto', sans-serif;
+        @include text(32px, 500, 37.5px);
         text-align: left;
         color: var(--color-primary-dark);
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-top: 0;
+            
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            font-family: 'Play', sans-serif;
+        @include text(64px, 700, 74.05px);
         margin-bottom: 40px;
+            
+        }
     }
+    
 
     &__text {
-        @include text(20px, 400, 38px);
-        flex-grow: 1;
-        max-width: 709px;
-        max-height: 456px;
+        @include text(18px, 400, 21.09px);
         text-align: left;
 
         @media  screen and (min-width: $bp-tablet) {
-           
+            @include text(20px, 400, 38px);
+        flex-grow: 1;
+        width: 709px;
         }
     }
 
     &__image {
+        display: none;
+
+        @media  screen and (min-width: $bp-desktop) {
         @include size(100%, 100%);
         flex-grow: 1;
-       max-width: 499px; 
-       max-height: 695px;
+       width: 499px; 
+       height: 695px;
         display: flex;
         align-items: flex-end;
-
-        @media  screen and (min-width: $bp-tablet) {
-        
         }
     }
 }

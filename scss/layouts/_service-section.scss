@@ -4,15 +4,25 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 96px;
+    margin-bottom: 64px;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 96px;
+     }
 
 
 
     &__title {
-        font-family: 'Play';
+        font-family: 'Roboto';
+        @include text(32px, 500, 37.5px);
+        margin-bottom: 24px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-family: 'Play';
         @include text(64px, 700, 74.05px);
         margin-bottom: 48px;
-        text-align: center;
+         }
     }
 
     &__block {
@@ -22,26 +32,36 @@
     }
 
     &__list {
-        flex-basis: calc((100% - 96px) / 3);
-        max-height: 500px;
+        width: 100%;
         @include center;
         flex-direction: row;
         gap: 16px;
+        overflow: hidden;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: calc((100% - 96px) / 3);
+            max-height: 500px;
+            overflow: visible;
+         }
 
     }
 
     &__item {
         position: relative;
-        @include size(344px, 456px);
+        @include size(320px, 416px);
         border-radius: 120px 4px 120px 4px;
         display: flex;
         justify-content: center;
         align-items: end;
         transition: transform 0.3s;
 
-        @media screen and (max-width: 1200px) {
-           @include size(288px, 400px); 
-        }
+        @media screen and (min-width: $bp-tablet) {
+            @include size(246px, 324px);
+         }
+    
+        @media screen and (min-width: $bp-desktop) {
+            @include size(344px, 456px);
+         }
 
     }
 
@@ -68,6 +88,10 @@
         @include text(22px, 400, 26px);
         text-align: center;
         color: var(--color-primary-light);
+
+        @media screen and (min-width: $bp-tablet) {
+            @include text(16px, 400, 20px);
+         }
     }
 
     &__img {
