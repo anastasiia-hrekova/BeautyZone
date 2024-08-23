@@ -2,11 +2,11 @@
     background-image: url(../images/star-bcg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 100px;
+    background-position: center -200px;
     
 
     @media  screen and (min-width: $bp-tablet) {
-        background-position: center 320px;
+        background-position: center -200px;
     }
 
     @media  screen and (min-width: $bp-desktop) {
