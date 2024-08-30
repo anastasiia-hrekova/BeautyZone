@@ -9,6 +9,7 @@
         
     }
 
+   
     &__block{
         display: flex;
         flex-direction: row;
@@ -19,7 +20,7 @@
 
     &__title {
         font-family: 'Roboto', sans-serif;
-        @include text(32px, 500, 37.5px);
+        @include text(32px, 500, 37px);
         text-align: left;
         color: var(--color-primary-dark);
         margin-bottom: 24px;
@@ -29,9 +30,9 @@
             
         }
 
-        @media screen and (min-width: $bp-tablet) {
+        @media screen and (min-width: $bp-desktop) {
             font-family: 'Play', sans-serif;
-        @include text(64px, 700, 74.05px);
+        @include text(64px, 700, 74px);
         margin-bottom: 40px;
             
         }
@@ -39,7 +40,7 @@
     
 
     &__text {
-        @include text(18px, 400, 21.09px);
+        @include text(18px, 400, 21px);
         text-align: left;
 
         @media  screen and (min-width: $bp-tablet) {
@@ -60,6 +61,13 @@
         display: flex;
         align-items: flex-end;
         }
+
+        @media screen and (min-width: $bp-desktop-L) {
+            width: 499px; 
+            height: auto;
+            
+        }
+    
     }
 }
 

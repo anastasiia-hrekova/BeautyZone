@@ -8,7 +8,7 @@
     padding-bottom: 120px;
 
     @media screen and (min-width: $bp-tablet) {
-        background-position: -450px bottom;
+        background-position: center bottom;
         padding-bottom: 40px;
     
 }
@@ -16,6 +16,11 @@
     @media screen and (min-width: $bp-desktop) {
             background-position: center bottom;
             padding-top: 116px;
+    }
+
+    @media  screen and (min-width: $bp-desktop-L) {
+        background-position: center bottom;
+        padding-bottom: 380px;
     }
 
     &__block {
@@ -47,7 +52,7 @@
     }
 
     &__title {
-        @include text(18px, 400, 21.09px);
+        @include text(18px, 400, 21px);
         color: var(--color-brand-dark);
         text-align: center;
         margin-bottom: 0;

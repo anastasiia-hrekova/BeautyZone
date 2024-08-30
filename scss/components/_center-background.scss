@@ -3,13 +3,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -200px;
-    
-
-    @media  screen and (min-width: $bp-tablet) {
-        background-position: center -200px;
-    }
+    z-index: -1;
+  
 
     @media  screen and (min-width: $bp-desktop) {
-        background-position: center bottom;
+        background-position: center 40px;
+    }
+
+    @media  screen and (min-width: $bp-desktop-L) {
+        background-position: center -100px;
     }
 }

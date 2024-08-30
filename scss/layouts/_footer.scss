@@ -17,7 +17,6 @@
     @media screen and (min-width: $bp-tablet) {
     flex-direction: row;
     justify-content: space-between;
-    gap: 186px;
     }
     }
 
@@ -39,7 +38,7 @@
 
     &_link {
         color: var(--color-primary-light);
-        @include text(16px, 400, 18.75px);
+        @include text(16px, 400, 19px);
     }
     
 }
@@ -81,7 +80,7 @@
     @media screen and (min-width: $bp-desktop) {
         display: flex;
         flex-direction: column;
-        @include text(16px, 400, 18.75px);
+        @include text(16px, 400, 19px);
         text-align: left;
         font-style: normal;  
         color: var(--color-primary-light);
@@ -104,7 +103,7 @@
 }
 
 &__politecy {
-    @include text(14px, 400, 16.41px);
+    @include text(14px, 400, 16px);
     text-align: center;
     font-style: normal;
     color: var(--color-primary-light);
@@ -112,7 +111,7 @@
     @media screen and (min-width: $bp-tablet) {
         margin-top: -85px;
         flex-direction: column;
-        @include text(16px, 400, 18.75px);
+        @include text(16px, 400, 19px);
         text-align: left;
     }
 
@@ -133,6 +132,10 @@
     content: '';
     right: 0;
     bottom: 0;
+        }
+
+        @media  screen and (min-width: $bp-desktop-L) {
+            display: none;
         }
     
 }

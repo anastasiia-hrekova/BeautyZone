@@ -30,7 +30,7 @@
 
     &__title {
         font-family: 'Play';
-        @include text(64px, 700, 74.05px);
+        @include text(64px, 700, 74px);
         text-align: center;
         color: var(--color-primary-light);
         margin-bottom: 40px;
@@ -38,7 +38,7 @@
 
     &__text {
         color: var(--color-primary-light);
-        @include text(22px, 600, 25.78px);
+        @include text(22px, 600, 26px);
         text-align: center;
         margin-top: 0;
         margin-bottom: 32px;

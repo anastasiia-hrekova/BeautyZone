@@ -21,7 +21,7 @@
 
 &__input::placeholder {
     color: var(--color-primary-light);
-    @include text(13px, 400, 15.23px);
+    @include text(13px, 400, 15px);
     text-align: left;
 }
 

@@ -20,26 +20,46 @@
     }
 
     &__block {
+        width: 100%;
        @include center;
        flex-direction: column-reverse;
        gap: 24px;
-
+              
         @media screen and (min-width: $bp-desktop) {
             flex-direction: row;
             gap: 32px;
+            margin-left: 0;
         }
     }
 
     &__map {
+        width: 100vw;
+        max-height: 232px;
         flex-grow: 1;
         flex-shrink: 0;
-        border-radius: 32px 32px 32px 32px;
         border: 0;
+                       
+                    
+        @media screen and (min-width: $bp-tablet) {
+        width: 100%;        
+        max-height: 481px;
+        border-radius: 32px 32px 32px 32px; 
+            
+        }
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 605px;        
+                                
+            }
     }
 
     &__form {
         @include center;
-        width: 100%;
+        left: auto;
+        right: auto;
+        width: 90%;
+        max-width: 320px;
+        max-height: 434px;
         flex-grow: 1;
         flex-direction: column;
         max-width: 422px;
@@ -50,7 +70,7 @@
         padding-bottom: 48px;
 
         &-title {
-            @include text(22px, 600, 25.78px);
+            @include text(22px, 600, 26px);
             text-align: center;
             color: var(--color-primary-light);
         }
