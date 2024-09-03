@@ -126,12 +126,12 @@
     @media screen and (min-width: $bp-desktop) {
         display: flex;
         position: absolute;
-    @include size(246px, 146px);
-    background-image: url(../images/footer-img.png);
-    background-repeat: no-repeat;
-    content: '';
-    right: 0;
-    bottom: 0;
+        @include size(246px, 146px);
+        background-image: url(../images/footer-img.png);
+        background-repeat: no-repeat;
+        content: '';
+        right: 0;
+        bottom: 0;
         }
 
         @media  screen and (min-width: $bp-desktop-L) {

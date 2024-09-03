@@ -9,16 +9,6 @@
         margin-bottom: 94px;
     }
 
-    &__title {
-        @include text(32px, 500, 37.5px);
-        text-align: center;
-
-        @media screen and (min-width: $bp-tablet) {
-            font-family: Play;
-            @include text(64px, 700, 74.05px);
-        }
-    }
-
     &__block {
         width: 100%;
        @include center;

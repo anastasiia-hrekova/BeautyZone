@@ -8,7 +8,8 @@
    @media screen and (min-width: $bp-tablet) {
     margin-bottom: 96px;
 }
-    
+
+      
     &__block {
         @include center;
         flex-direction: column;
@@ -23,19 +24,7 @@
             flex-direction: row;
             gap: 56px;
         }
-    }
 
-    &__title {
-        font-family: 'Roboto' sans-serif;
-        @include text(32px, 500, 37px);
-        text-align: center;
-        margin-bottom: 24px;
-
-        @media screen and (min-width: $bp-tablet) {
-            font-family: Play;
-            @include text(64px, 700, 74px);
-            margin-bottom: 48px;
-        }
     }
 
 

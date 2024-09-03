@@ -19,14 +19,18 @@
 
 .modal {
     position: relative;
-    @include size(100%, 100%);
-    max-width: 720px;
-    max-height: 680px;
-    padding: 42px 144px;
+    @include size(100%, 100%); 
+    padding:42px;    
     background-color: var(--color-brand-dark);
     background-image: url(../images/modal-back.png);
     border-radius: 48px 48px 48px 48px;
     overflow-y: auto;
+
+    @media screen and (min-width: $bp-desktop) {
+        max-width: 720px;
+    max-height: 680px;
+    padding: 42px 144px;
+}
 
     &__title {
         font-family: 'Play';

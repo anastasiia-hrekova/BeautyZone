@@ -1,108 +1,14 @@
 .service-section {
-    @include center;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 64px;
-    
+    margin-bottom: 96px; 
 
-    @media screen and (min-width: $bp-tablet) {
-        margin-bottom: 96px;
-     }
-
-
-
-    &__title {
-        font-family: 'Roboto';
-        @include text(32px, 500, 37px);
-        margin-bottom: 24px;
-        text-align: center;
-
-        @media screen and (min-width: $bp-tablet) {
-            font-family: 'Play';
-        @include text(64px, 700, 74px);
-        margin-bottom: 48px;
-         }
+    &__slider {
+        @include center;
+        gap:16px
+                
     }
 
-    &__block {
-        @include center;
-        gap: 16px;
-        
-    }
-
-    &__list {
-        width: 100%;
-        @include center;
-        flex-direction: row;
-        gap: 16px;
+    &__block{
         overflow: hidden;
-        z-index: 2;
-
-        @media screen and (min-width: $bp-tablet) {
-            flex-basis: calc((100% - 96px) / 3);
-            max-height: 500px;
-            overflow: visible;
-         }
-
     }
-
-    &__item {
-        position: relative;
-        @include size(320px, 416px);
-        border-radius: 120px 4px 120px 4px;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        transition: transform 0.3s;
-
-        @media screen and (min-width: $bp-tablet) {
-            @include size(246px, 324px);
-         }
     
-        @media screen and (min-width: $bp-desktop) {
-            @include size(344px, 456px);
-         }
-
-    }
-
-    &__item:hover {
-        transform: scale(1.04);
-    }
-
-    &__gradient {
-        border-radius: 120px 4px 120px 4px;
-        position: absolute;
-        bottom: 0;
-        @include size(100%, 100%);
-        z-index: 2;
-        background-image: linear-gradient(180.05deg,
-                rgba(1, 28, 68, 0) 48.53%,
-                rgba(1, 28, 68, 0.725825) 84.61%,
-                #011C44 101.39%);
-    }
-
-    &__text {
-        position: absolute;
-        z-index: 99;
-        bottom: 0;
-        @include text(22px, 400, 26px);
-        text-align: center;
-        color: var(--color-primary-light);
-
-        @media screen and (min-width: $bp-tablet) {
-            @include text(16px, 400, 20px);
-         }
-    }
-
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -10;
-        @include size(100%, 100%);
-        border-radius: 120px 4px 120px 4px;
-    }
-
 }
